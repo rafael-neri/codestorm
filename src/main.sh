@@ -4,9 +4,6 @@ identify_os() {
 
 }
 
-install() {
-    
-}
 
 # Verify if dialog is installed
 dialog_path=$(command -v dialog)
