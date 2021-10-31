@@ -1,0 +1,387 @@
+{
+	// Desabilita a Telemetria
+    "telemetry.telemetryLevel": "off",
+	"redhat.telemetry.enabled": false,
+
+    // Configurações da Janela
+    "window.titleBarStyle": "custom",
+
+	// Configurações dos arquivos
+    "files.autoSave": "onFocusChange",
+    "files.encoding": "utf8",
+    "files.insertFinalNewline": true,
+    "files.restoreUndoStack": true,
+    "files.saveConflictResolution": "askUser",
+    "files.enableTrash": true,
+    "files.eol": "\n",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": false,
+    "files.watcherExclude": {
+        "**/node_modules/**": true,
+        "**/vendor/**": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/env/**": true,
+        "env-*": true
+    },
+	"files.exclude": {
+		"**/.classpath": true,
+		"**/.project": true,
+		"**/.settings": true,
+		"**/.factorypath": true
+    },
+    
+    // Configurações do Workbench
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.colorTheme": "JetBrains Darcula Theme",
+    "workbench.sideBar.location": "left",
+    "workbench.activityBar.iconClickBehavior": "toggle",
+    "workbench.startupEditor": "none",
+
+	// Configurações da área de navegação dos arquivos
+    "explorer.compactFolders": false,
+    "explorer.openEditors.visible": 0,
+    "explorer.autoReveal": false,
+    "explorer.decorations.badges": true,
+    "explorer.confirmDelete": true,
+    "explorer.confirmDragAndDrop": true,
+    "explorer.decorations.colors": true,
+    "explorer.enableDragAndDrop": true,
+    "explorer.incrementalNaming": "smart",
+    "explorer.sortOrder": "default",
+
+	// Configurações do Editor
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.comments.insertSpace": true,
+    "editor.autoClosingBrackets": "languageDefined",
+    "editor.fontFamily": "'Jetbrains Mono', 'Fira Code', 'Consolas', 'Courier New', 'monospace'",
+    "editor.fontLigatures": true,
+    "editor.folding": true,
+    "editor.showFoldingControls": "always",
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": true,
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": false,
+    "editor.suggest.preview": true,
+    "editor.renderWhitespace": "all",
+
+	// Configurações de Debug
+	"debug.allowBreakpointsEverywhere": true,
+	"debug.console.closeOnEnd": false,
+	"debug.inlineValues": true,
+	"debug.toolBarLocation": "docked",
+	"debug.console.wordWrap": true,
+	"debug.showInStatusBar": "never",
+	"debug.openDebug": "openOnDebugBreak",
+    "debug.focusWindowOnBreak": true,
+
+    // Configuraçõe de Segurança
+    "security.workspace.trust.emptyWindow": false,
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.enabled": false,
+
+    // Auto Close Tag
+    "auto-close-tag.activationOnLanguage": [
+        "xml",
+        "php",
+        "blade",
+        "ejs",
+        "jinja",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "plaintext",
+        "markdown",
+        "vue",
+        "liquid",
+        "erb",
+        "lang-cfml",
+        "cfml",
+        "HTML (EEx)",
+        "HTML (Eex)",
+        "plist"
+    ],
+    "auto-close-tag.disableOnLanguage": [],
+    "auto-close-tag.enableAutoCloseSelfClosingTag": true,
+    "auto-close-tag.excludedTags": [
+        "area",
+        "base",
+        "br",
+        "col",
+        "command",
+        "embed",
+        "hr",
+        "img",
+        "input",
+        "keygen",
+        "link",
+        "meta",
+        "param",
+        "source",
+        "track",
+        "wbr"
+    ],
+    "auto-close-tag.fullMode": false,
+    "auto-close-tag.insertSpaceBeforeSelfClosingTag": false,
+    "auto-close-tag.SublimeText3Mode": true,
+
+	// Configuração da extensão Hungry Delete
+	"hungryDelete.enableSmartBackspace": true,
+	"hungryDelete.considerIncreaseIndentPattern": false,
+	"hungryDelete.followAbovelineIndent": false,
+	"hungryDelete.keepOneSpace": false,
+
+	// Intellicode
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	
+	// Terminal
+	"terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.defaultProfile.windows": "C:\\windows\\System32\\wsl.exe",
+    "terminal.integrated.tabs.enabled": true,
+
+    // Configurações do JSON
+    "json.maxItemsComputed": 25000,
+
+    // PHP Inteliphense
+    "intelephense.compatibility.correctForArrayAccessArrayAndTraversableArrayUnionTypes": true,
+    "intelephense.compatibility.correctForBaseClassStaticUnionTypes": true,
+    "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": false,
+    "intelephense.completion.insertUseDeclaration": true,
+    "intelephense.completion.maxItems": 100,
+    "intelephense.completion.triggerParameterHints": true,
+    "intelephense.diagnostics.argumentCount": true,
+    "intelephense.diagnostics.deprecated": true,
+    "intelephense.diagnostics.duplicateSymbols": true,
+    "intelephense.diagnostics.embeddedLanguages": true,
+    "intelephense.diagnostics.enable": true,
+    "intelephense.diagnostics.implementationErrors": true,
+    "intelephense.diagnostics.languageConstraints": true,
+    "intelephense.diagnostics.run": "onType",
+    "intelephense.diagnostics.typeErrors": true,
+    "intelephense.diagnostics.undefinedClassConstants": true,
+    "intelephense.diagnostics.undefinedFunctions": true,
+    "intelephense.diagnostics.undefinedMethods": true,
+    "intelephense.diagnostics.undefinedProperties": true,
+    "intelephense.diagnostics.undefinedSymbols": true,
+    "intelephense.diagnostics.undefinedTypes": true,
+    "intelephense.diagnostics.undefinedVariables": true,
+    "intelephense.diagnostics.unexpectedTokens": true,
+    "intelephense.diagnostics.unusedSymbols": true,
+    "intelephense.environment.documentRoot": "",
+    "intelephense.environment.includePaths": [],
+    "intelephense.environment.phpVersion": "8.0.0",
+    "intelephense.environment.shortOpenTag": false,
+    "intelephense.files.associations": [
+        "*.php",
+        "*.phtml"
+    ],
+    "intelephense.files.exclude": [
+        "**/.git/**",
+        "**/.svn/**",
+        "**/.hg/**",
+        "**/CVS/**",
+        "**/.DS_Store/**",
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/vendor/**/{Tests,tests}/**",
+        "**/.history/**",
+        "**/vendor/**/vendor/**"
+    ],
+    "intelephense.files.maxSize": 1000000,
+    "intelephense.format.braces": "psr12",
+    "intelephense.format.enable": true,
+    "intelephense.maxMemory": 0,
+    "intelephense.phpdoc.classTemplate":{
+        "summary": "$1",
+        "tags": [
+            "@package ${1:$SYMBOL_NAMESPACE}"
+        ]
+    },
+    "intelephense.phpdoc.functionTemplate": {
+        "summary": "$1",
+        "tags": [
+            "@param ${1:$SYMBOL_TYPE} $SYMBOL_NAME $2",
+            "@return ${1:$SYMBOL_TYPE} $2",
+            "@throws ${1:$SYMBOL_TYPE} $2"
+        ]
+    },
+    "intelephense.phpdoc.propertyTemplate": {
+        "summary": "$1",
+        "tags": [
+            "@var ${1:$SYMBOL_TYPE}"
+        ]
+    },
+    "intelephense.phpdoc.returnVoid": true,
+    "intelephense.phpdoc.textFormat": "snippet",
+    "intelephense.phpdoc.useFullyQualifiedNames": false,
+    "intelephense.references.exclude": [
+        "**/vendor/**"
+    ],
+    "intelephense.rename.exclude": [
+        "**/vendor/**"
+    ],
+    "intelephense.rename.namespaceMode": "single",
+    "intelephense.stubs": [
+        "apache",
+        "bcmath",
+        "bz2",
+        "calendar",
+        "com_dotnet",
+        "Core",
+        "ctype",
+        "curl",
+        "date",
+        "dba",
+        "dom",
+        "enchant",
+        "exif",
+        "FFI",
+        "fileinfo",
+        "filter",
+        "fpm",
+        "ftp",
+        "gd",
+        "gettext",
+        "gmp",
+        "hash",
+        "iconv",
+        "imap",
+        "intl",
+        "json",
+        "ldap",
+        "libxml",
+        "mbstring",
+        "meta",
+        "mysqli",
+        "oci8",
+        "odbc",
+        "openssl",
+        "pcntl",
+        "pcre",
+        "PDO",
+        "pdo_ibm",
+        "pdo_mysql",
+        "pdo_pgsql",
+        "pdo_sqlite",
+        "pgsql",
+        "Phar",
+        "posix",
+        "pspell",
+        "readline",
+        "Reflection",
+        "session",
+        "shmop",
+        "SimpleXML",
+        "snmp",
+        "soap",
+        "sockets",
+        "sodium",
+        "SPL",
+        "sqlite3",
+        "standard",
+        "superglobals",
+        "sysvmsg",
+        "sysvsem",
+        "sysvshm",
+        "tidy",
+        "tokenizer",
+        "xml",
+        "xmlreader",
+        "xmlrpc",
+        "xmlwriter",
+        "xsl",
+        "Zend OPcache",
+        "zip",
+        "zlib"
+    ],
+    "intelephense.telemetry.enabled": false,
+    "intelephense.trace.server": "off",
+
+
+    // Configurações Customize UI
+    "customizeUI.activityBar": "top",
+    "customizeUI.activityBarHideSettings": true,
+
+    // Configurações Git Lens
+    "gitlens.defaultDateFormat": null,
+    "gitlens.currentLine.format": "${author, }${agoOrDate}",
+    "gitlens.codeLens.scopes": [
+        "document",
+        "containers",
+        "blocks"
+    ],
+    "gitlens.hovers.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.menus": {
+        "editor": false,
+        "editorGroup": false,
+        "editorTab": false,
+        "explorer": false,
+        "scm": {
+            "authors": true
+        },
+        "scmGroupInline": {
+            "stash": true
+        },
+        "scmGroup": {
+            "compare": true,
+            "openClose": true,
+            "stash": true
+        },
+        "scmItem": {
+            "clipboard": true,
+            "compare": true,
+            "history": true,
+            "remote": false,
+            "stash": true
+        }
+    },
+
+    // Configuração do Git History
+    "gitHistory.showEditorTitleMenuBarIcons": false,
+
+    // Configurações dp PHP
+    "php.suggest.basic": false,
+    "php.validate.enable": true,
+
+    // Configurações do Shortcut Menu
+    "ShortcutMenuBar.beautify": true,
+    "ShortcutMenuBar.commentLine": true,
+    "ShortcutMenuBar.compareWithSaved": false,
+    "ShortcutMenuBar.copy": false,
+    "ShortcutMenuBar.cut": false,
+    "ShortcutMenuBar.findReplace": false,
+    "ShortcutMenuBar.formatWith": false,
+    "ShortcutMenuBar.goToDefinition": false,
+    "ShortcutMenuBar.indentLines": false,
+    "ShortcutMenuBar.navigateBack": false,
+    "ShortcutMenuBar.navigateForward": false,
+    "ShortcutMenuBar.newFile": false,
+    "ShortcutMenuBar.openFile": false,
+    "ShortcutMenuBar.openFilesList": false,
+    "ShortcutMenuBar.openSettings": false,
+    "ShortcutMenuBar.outdentLines": false,
+    "ShortcutMenuBar.paste": false,
+    "ShortcutMenuBar.quickOpen": false,
+    "ShortcutMenuBar.redo": false,
+    "ShortcutMenuBar.save": false,
+    "ShortcutMenuBar.saveAll": false,
+    "ShortcutMenuBar.showCommands": false,
+    "ShortcutMenuBar.startDebugging": false,
+    "ShortcutMenuBar.switchHeaderSource": false,
+    "ShortcutMenuBar.toggleActivityBar": false,
+    "ShortcutMenuBar.toggleRenderWhitespace": false,
+    "ShortcutMenuBar.toggleTerminal": true,
+    "ShortcutMenuBar.toggleWordWrap": false,
+    "ShortcutMenuBar.undo": false,
+    // "ShortcutMenuBar.userButton01Command": null
+
+    // Configurações Database Client
+    "database-client.highlightSQLBlock": true,
+    "database-client.showTrigger": true
+
+}
