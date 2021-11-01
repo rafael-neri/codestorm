@@ -9,14 +9,15 @@ CODESTORM_DIR=~/.codestorm
 JETBRAINS_FONT=JetBrainsMono-2.242.zip
 FIRACODE_FONT=5.2/Fira_Code_v5.2.zip
 
-RED='\033[0;31m'
-NC='\033[0m' # No Color
+COLOR_RED='\033[0;31m'
+NO_COLOR='\033[0m'
+
 
 function check_vscode() {
     if [ ! -x "$(command -v $CODE_BIN)" ]
     then
         echo
-        echo -e "${RED}Please install Visual Studio Code.${NC}" >&2
+        echo -e "${COLOR_RED}Please install Visual Studio Code.${NO_COLOR}" >&2
         exit 1
     fi
 }
@@ -29,7 +30,9 @@ function create_dirs() {
     mkdir -p $LOCAL_DIR/applications
     mkdir -p $CODESTORM_DIR/extensions
     mkdir -p $CODESTORM_DIR/user_data
+    mkdir -p $CODESTORM_DIR/user_data/User
 }
+
 
 function create_bin() {
     echo "code \
@@ -41,6 +44,7 @@ function create_bin() {
     " > $LOCAL_DIR/bin/$APP_NAME
     chmod +x $LOCAL_DIR/bin/$APP_NAME
 }
+
 
 function install_fonts() {
     wget -q https://download.jetbrains.com/fonts/$JETBRAINS_FONT -O /tmp/jetbrains.zip
@@ -58,6 +62,7 @@ function install_fonts() {
     fc-cache -f
 }
 
+
 function install_extension() {
     EXTENSION_NAME=$1
     EXTENSION_URL=$2
@@ -66,9 +71,10 @@ function install_extension() {
     code --sync off --extensions-dir $CODESTORM_DIR/extensions --install-extension $EXTENSION_URL > /dev/null 2>&1
 }
 
-# function settings() {
 
-# }
+function download_assets() {
+    echo "...."
+}
 
 
 echo -n "Check Visual Studio Code.......... "
@@ -87,6 +93,7 @@ echo -n "Install Fonts..................... "
 install_fonts
 echo "[OK]"
 
+
 install_extension "Auto Close Tag" formulahendry.auto-close-tag
 
 install_extension "Auto Rename Tag" formulahendry.auto-rename-tag
@@ -95,11 +102,11 @@ install_extension "Bracket Pair Colorizer 2" coenraads.bracket-pair-colorizer-2
 
 install_extension "Customize UI" iocave.customize-ui
 
-install_extension "Database Client" cweijan.vscode-database-client2
-
 install_extension "DotENV" mikestead.dotenv
 
 install_extension "Editorconfig" editorconfig.editorconfig
+
+install_extension "Fluent Icons" miguelsolorio.fluent-icons
 
 install_extension "Git Graph" mhutchie.git-graph
 
@@ -112,6 +119,8 @@ install_extension "Git Lens" eamodio.gitlens
 install_extension "HTML CSS Support" ecmel.vscode-html-css
 
 install_extension "Hungry Delete" jasonlhy.hungry-delete
+
+install_extension "Intellij IDEA Keybindings" k--kato.intellij-idea-keybindings
 
 install_extension "Intellij Parameter Hints" bobbyzrncev.intellij-parameter-hints
 
@@ -146,10 +155,8 @@ install_extension "XML Tools" dotjoshjohnson.xml
 install_extension "YAML" redhat.vscode-yaml
 
 
-
-# echo -n "Settings........................... "
-# settings
-# sleep 2
-# echo "[OK]"
+echo -n "Download Assets................. "
+download_assets
+echo "[OK]"
 
 echo "Done."

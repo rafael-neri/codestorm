@@ -5,6 +5,7 @@
 
     // Configurações da Janela
     "window.titleBarStyle": "custom",
+    "window.restoreWindows": "all",
 
 	// Configurações dos arquivos
     "files.autoSave": "onFocusChange",
@@ -38,6 +39,20 @@
     "workbench.sideBar.location": "left",
     "workbench.activityBar.iconClickBehavior": "toggle",
     "workbench.startupEditor": "none",
+    "workbench.editor.enablePreview": false,
+    "workbench.list.openMode": "doubleClick",
+    "workbench.activityBar.visible": true,
+    "workbench.editor.decorations.badges": true,
+    "workbench.editor.decorations.colors": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.languageDetection": true,
+    "workbench.editor.pinnedTabSizing": "normal",
+    "workbench.editor.showIcons": true,
+    "workbench.editor.showTabs": true,
+    "workbench.editor.tabCloseButton": "right",
+    "workbench.enableExperiments": true,
+    "workbench.statusBar.visible": true,
+    "workbench.tips.enabled": true,
 
 	// Configurações da área de navegação dos arquivos
     "explorer.compactFolders": false,
@@ -64,7 +79,7 @@
     "editor.linkedEditing": true,
     "editor.minimap.enabled": false,
     "editor.suggest.preview": true,
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "none",
 
 	// Configurações de Debug
 	"debug.allowBreakpointsEverywhere": true,
@@ -378,10 +393,14 @@
     "ShortcutMenuBar.toggleTerminal": true,
     "ShortcutMenuBar.toggleWordWrap": false,
     "ShortcutMenuBar.undo": false,
-    // "ShortcutMenuBar.userButton01Command": null
 
-    // Configurações Database Client
-    "database-client.highlightSQLBlock": true,
-    "database-client.showTrigger": true
+    // Configurações do Emmet
+    "emmet.triggerExpansionOnTab": true,
+
+    // Configuração da Engine Blade
+    "blade.format.enable": true,
+    "[blade]": {
+        "editor.autoClosingBrackets": "always",
+    }
 
 }

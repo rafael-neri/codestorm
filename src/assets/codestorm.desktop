@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=CodeStorm
+Icon=$HOME/.local/share/icons/codestorm.png
+Comment=VSCode Optimized for PHP Development
+Exec=codestorm %u
+Version=1.0
+Type=Application
+Categories=Development;IDE;
+Terminal=false
+StartupNotify=true
