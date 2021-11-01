@@ -27,7 +27,7 @@ function create_dirs() {
     mkdir -p ~/.fonts
     mkdir -p $LOCAL_DIR/bin
     mkdir -p $LOCAL_DIR/share/icons
-    mkdir -p $LOCAL_DIR/applications
+    mkdir -p $LOCAL_DIR/share/applications
     mkdir -p $CODESTORM_DIR/extensions
     mkdir -p $CODESTORM_DIR/user_data
     mkdir -p $CODESTORM_DIR/user_data/User
@@ -73,7 +73,9 @@ function install_extension() {
 
 
 function download_assets() {
-    echo "...."
+    wget -q https://raw.githubusercontent.com/rafael-neri/codestorm/master/src/assets/codestorm.png -O $LOCAL_DIR/share/icons
+    wget -q https://raw.githubusercontent.com/rafael-neri/codestorm/master/src/assets/settings.json -O $CODESTORM_DIR/user_data/User
+    wget -q https://raw.githubusercontent.com/rafael-neri/codestorm/master/src/assets/codestorm.desktop -O $LOCAL_DIR/share/applications
 }
 
 

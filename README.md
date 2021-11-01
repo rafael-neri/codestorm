@@ -1,4 +1,4 @@
-# Codestorm
+# CodeStorm
 
 VSCode Optimized for PHP Development.
 
