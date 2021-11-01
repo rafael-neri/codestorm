@@ -2,7 +2,7 @@
 
 VSCode Optimized for PHP Development.
 
-![CodeStorm](src/screenshot-codestorm.png "CodeStorm")
+![CodeStorm](https://github.com/rafael-neri/codestorm/raw/master/src/assets/screenshot-codestorm.png "CodeStorm")
 
 ## Install
 
