@@ -73,9 +73,11 @@ function install_extension() {
 
 
 function download_assets() {
-    wget -q https://raw.githubusercontent.com/rafael-neri/codestorm/master/src/assets/codestorm.png -O $LOCAL_DIR/share/icons
-    wget -q https://raw.githubusercontent.com/rafael-neri/codestorm/master/src/assets/settings.json -O $CODESTORM_DIR/user_data/User
-    wget -q https://raw.githubusercontent.com/rafael-neri/codestorm/master/src/assets/codestorm.desktop -O $LOCAL_DIR/share/applications
+    wget -q https://raw.githubusercontent.com/rafael-neri/codestorm/master/src/assets/codestorm.png -O $LOCAL_DIR/share/icons/codestorm.png
+    wget -q https://raw.githubusercontent.com/rafael-neri/codestorm/master/src/assets/settings.json -O $CODESTORM_DIR/user_data/User/settings.json
+    wget -q https://raw.githubusercontent.com/rafael-neri/codestorm/master/src/assets/codestorm.desktop -O $LOCAL_DIR/share/applications/codestorm.desktop
+
+    sed -i "s/{{USER}}/$USER/" $LOCAL_DIR/share/applications/codestorm.desktop
 }
 
 
@@ -129,6 +131,16 @@ install_extension "Intellij Parameter Hints" bobbyzrncev.intellij-parameter-hint
 install_extension "Jetbrains Darcula Theme" anan.jetbrains-darcula-theme
 
 install_extension "Jetbrains Icon Theme" chadalen.vscode-jetbrains-icon-theme
+
+install_extension "Laravel Blade Snippets" onecentlin.laravel-blade
+
+install_extension "Laravel Extra Intellisense" amiralizadeh9480.laravel-extra-intellisense
+
+install_extension "Laravel Goto View" codingyu.laravel-goto-view
+
+install_extension "Laravel Snippets" onecentlin.laravel5-snippets
+
+install_extension "Laravel Goto Controller" stef-k.laravel-goto-controller
 
 install_extension "Markdown All in One" yzhang.markdown-all-in-one
 
